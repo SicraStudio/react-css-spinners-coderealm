@@ -4,17 +4,34 @@
   "description": "Tutorial from code realm on how to set up a modern JS project",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint '**/*.js'",
+    "lint:fix": "prettier-eslint '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SicraStudio/react-css-spinners-coderealm.git"
   },
-  "keywords": ["react", "css", "spinner"],
+  "keywords": [
+    "react",
+    "css",
+    "spinner"
+  ],
   "author": "szikra",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/SicraStudio/react-css-spinners-coderealm/issues"
   },
-  "homepage": "https://github.com/SicraStudio/react-css-spinners-coderealm#readme"
+  "homepage": "https://github.com/SicraStudio/react-css-spinners-coderealm#readme",
+  "devDependencies": {
+    "eslint": "^5.15.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-standard": "^4.0.0",
+    "prettier-eslint": "^8.8.2",
+    "prettier-eslint-cli": "^4.7.1"
+  }
 }
