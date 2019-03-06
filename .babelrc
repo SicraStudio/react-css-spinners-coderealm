@@ -1,0 +1,15 @@
+{
+  "presets": [
+    [
+      "@babel/env",
+      {
+        "modules": false, // false porque el transpile lo hará rollup, no babel
+        "targets": {
+          "browsers": "> 0.25%, ie 11, not op_mini all, not dead",
+          "node": 10
+        }
+      }
+    ],
+    "@babel/react"
+  ]
+}
